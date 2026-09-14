@@ -1,8 +1,8 @@
-"use client"; // Теперь это клиентский компонент
+"use client";
 
+import { cn } from "@/shared/lib";
+import { Box } from "@/shared/ui";
 import { useState } from "react";
-import { Box } from "./shared/ui";
-import { cn } from "./shared/lib";
 
 export function UserBoxClient({
   user,

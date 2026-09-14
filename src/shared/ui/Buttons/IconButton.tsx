@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "../../lib";
+import { cn } from "@/shared/lib";
 import { type ButtonHTMLAttributes, forwardRef } from "react";
 
 interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { cn } from "../../lib";
+import { cn } from "@/shared/lib";
 
 interface AvatarProps {
   src?: string;

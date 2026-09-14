@@ -1,6 +1,6 @@
 "use client";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { cn } from "../../lib";
+import { cn } from "@/shared/lib";
 
 type colors = "gray" | "white" | "red" | "green" | "blue" | "yellow";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "../../lib";
+import { cn } from "@/shared/lib";
 import { Badge } from "../Badge/Badge";
 
 interface CardProps {

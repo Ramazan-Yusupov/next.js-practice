@@ -1,4 +1,4 @@
-import { cn } from "../../lib";
+import { cn } from "@/shared/lib";
 import NextImage, { type ImageProps as NextImageProps } from "next/image";
 import { forwardRef } from "react";
 

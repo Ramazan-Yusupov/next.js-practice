@@ -1,6 +1,6 @@
-import { fetchTasks } from "../shared/lib/tasksApi";
-import { Card } from "../shared/ui";
+import { fetchTasks } from "@/shared/lib/tasksApi";
 import { TaskListClient } from "./TaskListClient";
+import { Card } from "@/shared/ui";
 
 export default async function PracticePage() {
   // Серверный фетчинг задач

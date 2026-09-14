@@ -1,6 +1,6 @@
 "use client";
+import { PAGES } from "@/shared/config";
 import { GridFourIcon } from "@phosphor-icons/react";
-import { PAGES } from "../../shared/config/pages.config";
 import { AiFillHome } from "react-icons/ai";
 
 export interface IMenuBar {

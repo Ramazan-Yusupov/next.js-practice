@@ -1,7 +1,7 @@
 "use client";
 
+import { Button } from "@/shared/ui";
 import { useState } from "react";
-import { Button } from "../shared/ui";
 
 // Тип задачи (подставь свой из shared/types)
 type Task = { id: string; title: string; done: boolean };

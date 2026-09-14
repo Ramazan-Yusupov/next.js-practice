@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { IMenuBar } from "./menu";
-import { cn } from "@/app/shared/lib";
+import { cn } from "@/shared/lib";
 
 interface MenuBarProps {
   menuBar: IMenuBar;

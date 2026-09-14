@@ -1,5 +1,5 @@
-import { UserBoxClient } from "./UserBoxClient";
-import { fetchUserData } from "./shared/lib/userData";
+import { UserBoxClient } from "@/components/UserBoxClient";
+import { fetchUserData } from "@/shared/lib/userData";
 
 export default async function HomePage() {
   const data = await fetchUserData();
