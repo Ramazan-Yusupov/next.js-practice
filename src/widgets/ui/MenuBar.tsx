@@ -2,6 +2,7 @@
 import Link from "next/link";
 import type { IMenuBar } from "./menu";
 import { cn } from "@/shared/lib";
+import { usePathname } from "next/navigation";
 
 interface MenuBarProps {
   menuBar: IMenuBar;
@@ -9,6 +10,7 @@ interface MenuBarProps {
 }
 
 export function MenuBar({ menuBar, className }: MenuBarProps) {
+  const pathname = usePathname();
   return (
     <Link
       href={menuBar.href}
@@ -16,6 +18,7 @@ export function MenuBar({ menuBar, className }: MenuBarProps) {
       className={cn(
         "flex items-center gap-2 text-gray-400 hover:text-white transition-colors",
         className,
+        pathname === menuBar.href && "text-red-500",
       )}
     >
       {menuBar.icon}
