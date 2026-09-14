@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import type { IMenuBar } from "./menu";
+import { cn } from "@/app/shared/lib";
 
 interface MenuBarProps {
   menuBar: IMenuBar;
@@ -8,14 +9,15 @@ interface MenuBarProps {
 
 export function MenuBar({ menuBar, className }: MenuBarProps) {
   return (
-    <NavLink
-      to={menuBar.href}
+    <Link
+      href={menuBar.href}
       aria-label={menuBar.title}
-      className={({ isActive }) =>
-        `${isActive ? "text-red-500" : ""} ${className || ""}`
-      }
+      className={cn(
+        "flex items-center gap-2 text-gray-400 hover:text-white transition-colors",
+        className,
+      )}
     >
       {menuBar.icon}
-    </NavLink>
+    </Link>
   );
 }
