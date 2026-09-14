@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import type { IMenuBar } from "./menu";
 import { cn } from "@/shared/lib";

@@ -7,7 +7,7 @@ import { useState } from "react";
 export function UserBoxClient({
   user,
 }: {
-  user: { id: string; name: string };
+  user: { id: number; name: string };
 }) {
   const [isClicked, setIsClicked] = useState(false);
 
@@ -15,8 +15,8 @@ export function UserBoxClient({
 
   return (
     <Box
-      width={250}
-      height={200}
+      width={200}
+      height={150}
       tabIndex={0}
       role="button"
       onClick={toggleClick}
